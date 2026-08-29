@@ -1,0 +1,8 @@
+CompileFlags:
+  Add:
+    - -std=c++17
+    - -pthread
+    - -Wall
+    - -Wextra
+    - -I/data/dev/raspberry/rpiserver/github/rpiserver/rpiserver/src
+    - -I/usr/include

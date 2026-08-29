@@ -1,0 +1,3 @@
+rpiserver - POSIX C++ JSON-RPC 2.0 TCP Server for Raspberry Pi telemetry and control.
+
+See README.md in the top directory for full documentation.

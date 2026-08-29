@@ -1,0 +1,53 @@
+# Compiled Object & Binary Files
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+/rpiserver/src/rpiserver
+/rpiserver/rpiserver
+
+# Build & Dependency Directories
+**/.deps/
+**/.dirstamp
+**/.libs/
+autom4te.cache/
+docs/build/
+**/docs/build/
+
+# Autotools Generated Files
+Makefile
+Makefile.in
+**/Makefile
+**/Makefile.in
+aclocal.m4
+compile
+config.guess
+config.h
+config.h.in
+config.log
+config.status
+config.sub
+configure
+depcomp
+install-sh
+libtool
+ltmain.sh
+missing
+stamp-h1
+m4/
+
+# Editor & IDE Temporary Files
+.idea/
+.clangd/
+*.swp
+*~

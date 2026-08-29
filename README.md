@@ -1,5 +1,7 @@
 # POSIX C++ JSON-RPC 2.0 RPI Server
 
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/rpiserver/refs/heads/master/docs/rpi_server_logo.png" width="25%">
+
 **rpiserver** is a multi-threaded POSIX C++ TCP server providing JSON-RPC 2.0 remote control and status telemetry for Raspberry Pi nodes, designed to communicate with **[rpiclient](https://github.com/vroncevic/rpiclient)**.
 
 Developed in modern **[C++17](https://en.wikipedia.org/wiki/C%2B%2B17)** with native POSIX sockets and POSIX threads.
@@ -171,6 +173,8 @@ More documentation and info at:
 ---
 
 ### Copyright and Licence
+
+![Foundations](https://raw.githubusercontent.com/vroncevic/rpiserver/master/docs/foundations.png)
 
 Copyright (c) 2016 - 2026 Vladimir Roncevic <elektron.ronca@gmail.com>
 

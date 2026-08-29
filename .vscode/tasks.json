@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "rpiserver build",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/rpiserver"
+            },
+            "args": [],
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "rpiserver clean",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/rpiserver"
+            },
+            "args": ["clean"],
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

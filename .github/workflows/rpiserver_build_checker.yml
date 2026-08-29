@@ -1,0 +1,42 @@
+name: rpiserver_build_checker
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'rpiserver/**'
+      - '.github/workflows/rpiserver_build_checker.yml'
+  pull_request:
+    branches: [ master ]
+    paths:
+      - 'rpiserver/**'
+      - '.github/workflows/rpiserver_build_checker.yml'
+
+jobs:
+  build:
+    name: Build rpiserver
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Build Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libtool-bin autoconf automake g++ nlohmann-json3-dev
+
+      - name: Autogen Build System
+        run: |
+          cd rpiserver
+          ./autogen.sh
+
+      - name: Compile Application
+        run: |
+          cd rpiserver
+          make
+
+      - name: Verify Binary Execution
+        run: |
+          cd rpiserver
+          ./src/rpiserver --version
+          ./src/rpiserver --help

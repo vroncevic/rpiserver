@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../rpiclient/github/rpiclient"
+		}
+	],
+	"settings": {}
+}
